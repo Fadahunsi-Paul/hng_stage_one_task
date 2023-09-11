@@ -28,8 +28,8 @@ class first_stage(APIView):
 
         endpoint_response = {
             'slack_name':slack_name,
-            'current_weekday':current_weekday,
-            'current_utc_time':current_utc_time.strftime(utc_time_format),
+            'current_day':current_weekday,
+            'utc_time':current_utc_time.strftime(utc_time_format),
             'track':track,
             'github_file_url':github_file_url,
             'github_repo_url':github_repo_url,
