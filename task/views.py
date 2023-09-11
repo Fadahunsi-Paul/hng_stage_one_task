@@ -10,7 +10,7 @@ from django.utils import timezone
 class first_stage(APIView):
     def get(self,request): 
         #Query Parameters
-        slack_name = request.query_params.get('slack_name',"Fadahunsi Paul")
+        slack_name = request.query_params.get('slack_name',"Fadahunsi_Paul")
 
         #Weekday query Parameters
         current_weekday = datetime.now().strftime("%A")
