@@ -18,7 +18,7 @@ class first_stage(APIView):
         current_utc_time = datetime.utcnow().strftime("$Y-%m-%dT%H:%M:%SZ")
 
         #track queries
-        track = request.query_params.get('track','Backend')
+        track = request.query_params.get('track','backend')
 
         #File URL setup
         github_file_url = 'https://github.com/Fadahunsi-Paul/hng_stage_one_task/blob/main/task/views.py'
