@@ -19,7 +19,7 @@ def json_endpoint(request):
     track = request.GET.get('track','Backend')
 
     #File URL setup
-    github_file_url = ...
+    github_file_url = 'https://github.com/Fadahunsi-Paul/hng_stage_one_task/blob/main/task/views.py'
 
     #source code queries
     github_repo_url = 'https://github.com/Fadahunsi-Paul/hng_stage_one_task' 
