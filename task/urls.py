@@ -1,6 +1,6 @@
-from django.urls import path
-from . import views
+from django.urls import re_path as url
+from .views import first_stage
 
 urlpatterns = [
-    path('json_endpoint/', views.json_endpoint, name='endpoint'),  
+    url(r'', first_stage.as_view()),  
 ]
